@@ -1,4 +1,3 @@
-Voici les versions renouvelées des README pour le projet principal et pour chaque branche (`frontend` et `backend`). Ces README incluent des instructions sur la création, la gestion, et la fusion des branches, ainsi que des détails spécifiques à chaque partie du projet.
 
 ---
 
@@ -62,5 +61,3 @@ Pour plus de détails, consultez les README de chaque branche :
 - [Frontend README](frontend/README.md)
 - [Backend README](backend/README.md)
 ```
-
----
