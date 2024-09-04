@@ -1,8 +1,0 @@
-django
-django-cors-headers
-djangorestframework
-djangorestframework-simplejwt
-django-crontab
-mysqlclient
-python-dotenv
-pillow

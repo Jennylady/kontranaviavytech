@@ -114,4 +114,8 @@ git checkout frontend
    ```bash
    git push origin main
    ```
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> frontend
