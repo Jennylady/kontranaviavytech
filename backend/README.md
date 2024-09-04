@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 # Kontranaviavytech - Backend
 
 Ce dossier contient le code source du serveur et de l'API pour le projet **Kontranaviavytech**, développé avec Django. Le backend gère la logique métier, les interactions avec la base de données, et expose les API nécessaires pour le frontend.

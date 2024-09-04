@@ -60,4 +60,8 @@ Chaque collaborateur doit travailler sur la branche appropriée (`frontend` ou `
 Pour plus de détails, consultez les README de chaque branche :
 - [Frontend README](frontend/README.md)
 - [Backend README](backend/README.md)
+<<<<<<< HEAD
 ```
+=======
+`
+>>>>>>> backend
