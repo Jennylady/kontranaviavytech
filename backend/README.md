@@ -33,6 +33,7 @@ Ce dossier contient le code source du serveur et de l'API pour le projet **Kontr
    ```
 
 4. Appliquez les migrations de la base de données :
+Tout d'abord, verifier dans le fichier .env si les informations de base de données sont correctes.
    ```bash
    python manage.py makemigrations
 
