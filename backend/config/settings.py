@@ -1,22 +1,23 @@
-
-
 from pathlib import Path
 import os
+from config.utils import get_server_settings
 from dotenv import load_dotenv
 
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-IP_ADDR = "127.0.0.1"
+IP_ADDR = get_server_settings()
 
 SECRET_KEY = 'django-insecure-z*3d1so@0zk(=#04)s0rooxi7ij^(fl&hv!br)n0c)931z#$57'
 
 DEBUG = True
 
-ALLOWED_HOSTS = [IP_ADDR]
+ALLOWED_HOSTS = [IP_ADDR, "127.0.0.1","localhost"]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "apps.users.apps.UsersConfig"
+]
 
 THIRD_PARTY_APPS = [
     'corsheaders',
@@ -116,13 +117,8 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
 STATIC_URL = 'static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

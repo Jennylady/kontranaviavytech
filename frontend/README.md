@@ -115,5 +115,3 @@ git checkout frontend
    git push origin main
    ```
 ```
-
----
