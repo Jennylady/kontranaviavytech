@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-IP_ADDR = get_server_settings()
+IP_ADDR = get_server_settings()["ip"]
 
 SECRET_KEY = 'django-insecure-z*3d1so@0zk(=#04)s0rooxi7ij^(fl&hv!br)n0c)931z#$57'
 
@@ -68,8 +68,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
     'default': {

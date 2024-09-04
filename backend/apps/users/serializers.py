@@ -6,14 +6,14 @@ from rest_framework.exceptions import AuthenticationFailed
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Users
+        model = User
         fields = ['id', 'name', 'email', 'genre']
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
     class Meta:
-        model = Users
+        model = User
         fields = ['name', 'email', 'genre', 'password']
 
     def create(self, validated_data):
@@ -26,12 +26,15 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField(write_only=True)
 
     def validate(self, data):
+        if 'email' not in data or 'password' not in data:
+            raise serializers.ValidationError("Les champs 'email' et 'password' sont obligatoires.")
+
         email = data.get('email')
         password = data.get('password')
 
         try:
-            user = Users.objects.get(email=email)
-        except Users.DoesNotExist:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
             raise AuthenticationFailed('Invalid credentials, user not found.')
 
         if not check_password(password, user.password):

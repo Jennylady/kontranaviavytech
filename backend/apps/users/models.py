@@ -1,6 +1,6 @@
 from django.db import models
 
-class Users(models.Model):
+class User(models.Model):
     name = models.TextField()
     email = models.EmailField()
     genre = models.CharField(max_length=40)

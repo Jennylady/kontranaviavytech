@@ -16,4 +16,4 @@ def get_server_settings():
             else:
                 port = ip_port
 
-    return ip_addr, port
+    return {"ip":ip_addr, "port":port}
