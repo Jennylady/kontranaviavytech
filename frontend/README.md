@@ -68,3 +68,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Travailler sur la branche `frontend`
+
+Pour travailler sur cette branche, assurez-vous de l'avoir sélectionnée :
+
+```bash
+git checkout frontend
+```
+
+### Ajout de nouvelles fonctionnalités
+
+1. Faites vos modifications.
+2. Ajoutez les fichiers modifiés :
+   ```bash
+   git add .
+   ```
+3. Commitez vos modifications :
+   ```bash
+   git commit -m "Description des modifications"
+   ```
+4. Poussez vos modifications :
+   ```bash
+   git push origin frontend
+   ```
+
+## Fusionner la branche `frontend` avec `main`
+
+1. Assurez-vous d'avoir poussé toutes vos modifications sur la branche `frontend`.
+2. Passez sur la branche `main` :
+   ```bash
+   git checkout main
+   ```
+3. Fusionnez la branche `frontend` :
+   ```bash
+   git merge frontend
+   ```
+4. Résolvez les conflits éventuels, ajoutez les fichiers modifiés, et commitez :
+   ```bash
+   git add .
+   git commit -m "Fusion de la branche frontend dans main"
+   ```
+5. Poussez les modifications sur GitHub :
+   ```bash
+   git push origin main
+   ```
+```
