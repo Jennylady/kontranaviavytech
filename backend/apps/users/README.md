@@ -30,4 +30,7 @@ Lors de l'inscription, les mots de passe sont automatiquement hachés pour garan
 
 Les routes API pour ce module sont définies dans `urls.py` et incluent des points de terminaison pour l'inscription, la connexion, et la gestion des utilisateurs.
 
+### API
+Tous les details des points de terminaison sont dans le fichier [apiusers.md](./apiusers.md)
+
 ---
