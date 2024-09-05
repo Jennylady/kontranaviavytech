@@ -1,0 +1,156 @@
+:root {
+    --my-purple: #6000C7;
+    --gradient-start: #6000C7;
+    --gradient-end: #3E1FFF;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .contenaireLanding {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Fixer le nav en haut */
+  .landing1 {
+    position: relative;
+    
+  }
+  
+  .landing1 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem .1rem; 
+    align-items: center;
+  }
+  
+  .landing1 nav .left {
+    padding: .2rem 1rem;
+  }
+  .landing1 nav .left img {
+    height: 4rem;
+    width: 10rem;
+  }
+  
+  .landing1 nav .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 0rem 1rem;
+  }
+  
+  .landing1 nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .landing1 nav ul li {
+    list-style: none;
+    padding: 0.3rem 0.1rem;
+    color: rgba(29, 1, 29, 0.685);
+    cursor: pointer;
+    position: relative;
+    font-weight: 800;
+  }
+  .landing1 nav ul li.active {
+    
+    color: var(--my-purple);
+  }
+  /* Classe active pour les menus */
+  .landing1 nav ul li.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    background-color: var(--my-purple);
+    color: var(--my-purple);
+  }
+  
+  .landing1 nav ul li.acceuil.active::after {
+    width: 35%;
+  }
+  
+  .landing1 nav ul li.partage.active::after {
+    width: 55%;
+  }
+  
+  .landing1 nav ul li.formation.active::after {
+    width: 70%;
+  }
+  
+  .landing1 nav ul li.contact.active::after {
+    width: 100%;
+  }
+  
+  /* Style amélioré pour le bouton de connexion */
+  .landing1 nav .button button {
+    padding: 0.8rem .5rem; /* Bouton plus grand */
+    border: none;
+    border-radius: 5px; /* Bouton plus arrondi */
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.6); 
+    letter-spacing: .1rem;
+  }
+  
+  .landing1 nav .button button:hover {
+    background: linear-gradient(to right, var(--gradient-end), var(--gradient-start));
+    transform: translateY(-2px); /* Légère animation lors du survol */
+  }
+  
+  .section {
+    height: 99vh;
+    display: flex;
+    align-items: center;
+   
+    
+  }
+  
+  #accueil {
+    background-color: #f4f4f4;
+  }
+  
+  #partage {
+    background-color: #e0e0e0;
+  }
+  
+  #formation {
+    background-color: #cccccc;
+  }
+  
+  #contact {
+    background-color: #b3b3b3;
+  }
+  
+  .section h2 {
+    font-size: 3rem;
+    color: var(--my-purple);
+    margin-bottom: 1rem;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+  }
+  

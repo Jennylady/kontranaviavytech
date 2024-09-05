@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .welcomeSection, .loginSection {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .welcomeSection {
+    left: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .loginSection {
+    right: 0;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .container.slide .welcomeSection {
+    transform: translateX(100%);
+  }
+  
+  .container.slide .loginSection {
+    transform: translateX(-100%);
+  }
+  

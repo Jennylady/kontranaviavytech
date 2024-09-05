@@ -1,0 +1,77 @@
+/* AccueilSection.css */
+:root {
+  --my-purple: #6000C7;
+  --gradient-start: #FF527B;
+  --gradient-end: #3E1FFF;
+}
+
+.accueil-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  background-image: url('../assets/Ellipse\ 71.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.accueil-section .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligner à gauche */
+  padding: 2rem;
+  border: 1px solid blue;
+  color: black;
+}
+
+.accueil-section .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
+ 
+}
+
+.accueil-section .right img.full-image {
+ width: 100%;
+ height: 30rem;
+/* Pour que l'image remplisse bien le conteneur */
+}
+
+.accueil-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: left; /* Alignement à gauche */
+}
+
+.accueil-section .gradient-text {
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.accueil-section .start-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.6);
+}
+
+.accueil-section .start-button:hover {
+  background: linear-gradient(to right, var(--gradient-end), var(--gradient-start));
+  transform: translateY(-2px);
+}
